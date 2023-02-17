@@ -1,0 +1,154 @@
+@charset "UFT-8";
+
+/* IMPORT FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url('fontes/idroid.otf') format(opentype);
+}
+
+/*DEFAULT AND VARS*/
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --sombra: rgba(0, 0, 0, 0.466);
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: Android, sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte0);
+    margin: 0px;
+}
+
+.destaque {
+    color: var(--cor3);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: bolder;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link::after {
+    content: '\00A0\1F517';
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.5em;
+}
+
+header {
+    background-image: linear-gradient(var(--cor1), var(--cor3), var(--cor4));
+    color: white;
+    text-shadow: 4px 4px 5px var(--sombra);
+    box-shadow: 2px 6px 9px var(--sombra);
+}
+
+header h1 {
+    font-family: var(--fonte1);
+    text-align: center;
+    font-weight: normal;
+    font-size: 60px;
+    margin: 20px 0px;
+}
+
+header h2 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+nav {
+    padding: 10px;
+}
+
+.menu {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+main {
+    background-color: white;
+    margin: 0px 90px;
+    box-shadow: 2px 6px 9px var(--sombra);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 20px;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 15px;
+}
+
+aside h3 {
+    background-color: var(--cor3);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.title_main {
+    font-family: var(--fonte2);
+    color: var(--cor4);
+}
+
+h1.title_main {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+h2.title_main {
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor0), white 70%);
+    padding-left: 10px;
+}
+
+aside {
+    padding-bottom: 5px;
+}
+
+aside h3 {
+    padding: 8px;
+    color: var(--cor0);
+}
+
+aside ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+aside p {
+    padding: 0px 15px 0px 15px;
+}
+
+footer {
+    background-color: var(--cor4);
+}
+
+footer p {
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+    color: var(--cor0);
+}
