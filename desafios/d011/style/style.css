@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+ /* 
+    Shorthand - background
+
+    color > image > position > repeat > [size]* > attachment
+
+    *size está correto segundo as documentações porém ainda em alguns navegadores não funciona
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#espaco {
+    height: 100vh;
+    background: black url('../images/espaco.jpg') center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#astronauta {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*
+    Duas posibilidades com ou sem o max-width
+    max-width: 50vh;
+    */
+}
