@@ -4,61 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 13.3</title>
+    <title>Tabelas</title>
     <style>
-        * {
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
             border-collapse: collapse;
-            width: 550px;
-            text-align: center;
-            vertical-align: middle;
         }
 
-        caption {            
-            font-size: 2em;
-            font-weight: bolder;
-            padding: 10px;
-        }
-
-        th {
-            color: white;
-            background-color: gray;
-            padding: 10px;
+        caption {
             font-size: 1.3em;
-            border: 1px solid black;
+            font-weight: bold;
+            padding: 10px;
         }
 
-        th#cabecalho {
-            color: black;
-            font-size: 2em;
-            background-color: lightgray;
-            padding: 5px;
-        }
-
-        td {
-            border: 1px solid black;
-            padding: 5px;
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <h1>Exercícios de Tabelas</h1>
     <table>
-        <thead>           
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
             <tr>
-                <th scope="col" colspan="5" id="cabecalho">Deafio 13.3</th>
-            </tr> 
-            <tr>
-                <th scope="col">Grupo</th>
-                <th scope="col" >Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="3">Mulheres</th>
+                <th rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -77,7 +60,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th scope="row" rowspan="3">Homens</th>
+                <th rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
