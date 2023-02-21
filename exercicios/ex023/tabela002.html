@@ -32,6 +32,20 @@
             color: white;            
         }
 
+        /*
+            Pseudo classe nth-child()
+            odd | 2n-1 - ímpar
+            even | 2n - par
+        */
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
         td.num {
             text-align: right;
         }
